@@ -211,7 +211,3 @@ def multilayer_svg(pen:AutoPen,image_paths:list[str],temp_gcode_file_path:str=".
             
             plot_svg(pen,path,temp_gcode_file_path)
 
-if __name__ == "__main__":        
-    pen = AutoPen()
-    
-    multilayer_svg(pen,["multilayer_image/lion_plotted_1_set1_pen1_100 Black.svg","multilayer_image/lion_plotted_1_set1_pen2_YR09 Chinese Orange.svg","multilayer_image/lion_plotted_1_set1_pen3_N4 Neutral Gray.svg"])
