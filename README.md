@@ -21,7 +21,7 @@ pen.set_pen_height(0) # pen up </br>
 pen = AutoPen() </br>
 
 plot_svg(pen=pen,path="./input.svg",temp_gcode_file_path=./output.gcode)  </br>
-![Uploading IMG_20251022_162823830_resized.jpg…]()
+![IMG_20251022_162823830_resized](https://github.com/user-attachments/assets/6afe2214-971f-44a5-9f8a-753303f7c99e)
 
 <h3>Draw multilayer drawing (merge multiple seperate svg's, with time between pen swapping)</h3>
 pen = AutoPen() </br>
