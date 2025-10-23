@@ -26,7 +26,6 @@ class AutoPen():
         self.ser.write((command + '\n').encode())
         while True:
             line = self.ser.readline().decode().strip()
-            # print(line, "command: ",command)
             if line.lower() == 'ok':
                 break
     
@@ -61,7 +60,7 @@ class AutoPen():
 
         self.is_absolute_coordinate_mode = False 
 
-    def set_pen_height(self,height:int) -> None:
+    def set_pen_height(self,height:float) -> None:
         """
         0 is all the way up
         9 is all the way down (with some space left so the motor doesn't run into the metal)
@@ -176,17 +175,23 @@ def convert_svg_to_gcode_vpype(path_input_file:str,path_output_file:str):
 def execute_raw_gcode_from_file(pen:AutoPen,path_gcode_file:str) -> None:
     """
     this will read and execute the gcode from a file.
+
+    if return_to_start is true it will return to x=0 and y=0 when it's done.
+
     """
     commands = []
+    
     #read and preprocess
     with open(path_gcode_file, 'r') as file:
         for line in file:
             command = line.strip().split(";")[0]
+
             if(not len(command) == 0):
                 commands.append(command)
 
     #execute 
-    for command in tqdm(commands,ascii=True):
+    for command in tqdm(commands,ascii=True,total=len(commands)):
+            
         pen.send_gcode(command)
 
 
@@ -210,4 +215,11 @@ def multilayer_svg(pen:AutoPen,image_paths:list[str],temp_gcode_file_path:str=".
                     break 
             
             plot_svg(pen,path,temp_gcode_file_path)
+
+        
+
+if __name__ == "__main__":        
+    pen = AutoPen()
+    multilayer_svg(pen,["multilayer_image/green_layer_resized.svg","multilayer_image/red_layer_resized.svg","multilayer_image/blue_layer_resized.svg"])
+
 
