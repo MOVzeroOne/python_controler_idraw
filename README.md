@@ -37,6 +37,10 @@ pen.set_pen_height(0) # pen up
 
 ```
 
+https://github.com/user-attachments/assets/f5f96751-55c2-492e-af7b-0c8af98b03b2
+
+
+
 <h3> Drawing a chain </h3> 
 
 ```
@@ -62,6 +66,7 @@ pen.arc_counter_clock_wise(2,0,-2,-4) #new pos is (0,0)
 pen.set_pen_height(0) # pen up
 pen.move_xy_variable_speed(0,0) #move to start
 ```
+
 
 <h3>Draw SVG </h3>
 
