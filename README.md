@@ -1,5 +1,21 @@
 <h1> iDraw H A3 pen plotter python api (linux) </h1>
 
+<h2> Installation</h2>
+only packages used are: </br> 
+- tqdm (loading bar) </br>
+- pyserial (for serial communication with penplotter) </br> 
+- vpype[all] and vpype-gcode (to convert svg to gcodes) </br>
+
+
+To make installation easier I made a requirments.txt with frozen version numbers (python I used is 3.13.9), </br>
+to install the requirements you can just do </br>
+
+```
+pip install -r requirements.txt
+```
+
+
+
 <h2> Things to know </h2>
 
 When plotting an svg, you should put the pen in the bottom left. </br>
