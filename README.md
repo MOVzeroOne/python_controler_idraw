@@ -23,7 +23,14 @@ pen.set_pen_height(0) # pen up
 
 <h3> Drawing a circle </h3> </br>
 
+```
+pen = AutoPen()
 
+pen.set_pen_height(5) # pen down
+pen.arc_clock_wise(0,0,2,2)
+pen.set_pen_height(0) # pen up 
+
+```
 
 <h3>Draw SVG </h3>
 
