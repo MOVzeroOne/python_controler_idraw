@@ -2,9 +2,9 @@
 
 <h2> Things to know </h2>
 
-When plotting an svg, you should put the pen in the bottom left. 
+When plotting an svg, you should put the pen in the bottom left. </br>
 When directly controling the autopen with move_xy and arcs know that the position the pen starts in will be seen as the 0,0 point, and by default all movements 
-are absolute coordinates with respect to this point. 
+are absolute coordinates with respect to this point. </br>
 
 
 <h2>Examples </h2>
