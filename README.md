@@ -5,9 +5,9 @@ only packages used are: </br>
 - tqdm (loading bar) </br>
 - pyserial (for serial communication with penplotter) </br> 
 - vpype[all] and vpype-gcode (to convert svg to gcodes) </br>
+</br>
 
-
-To make installation easier I made a requirments.txt with frozen version numbers (python I used is 3.13.9), </br>
+To make installation easier I made a requirments.txt with frozen version numbers (python version I used is 3.13.9), </br>
 to install the requirements you can just do </br>
 
 ```
