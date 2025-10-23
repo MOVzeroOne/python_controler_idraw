@@ -25,5 +25,6 @@ plot_svg(pen=pen,path="./input.svg",temp_gcode_file_path=./output.gcode)  </br>
 
 <h3>Draw multilayer drawing (merge multiple seperate svg's, with time between pen swapping)</h3>
 pen = AutoPen() </br>
+multilayer_svg(pen,["multilayer_image/green_layer_resized.svg","multilayer_image/red_layer_resized.svg","multilayer_image/blue_layer_resized.svg"]) </br>
 
-multilayer_svg(pen,["multilayer_image/lion_plotted_1_set1_pen1_100 Black.svg","multilayer_image/lion_plotted_1_set1_pen2_YR09 Chinese Orange.svg","multilayer_image/lion_plotted_1_set1_pen3_N4 Neutral Gray.svg"]) </br>
+
