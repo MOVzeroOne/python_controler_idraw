@@ -77,7 +77,7 @@ https://github.com/user-attachments/assets/8944ef7c-10d1-4a28-b685-544d12f16e68
 ```
 pen = AutoPen()
 
-plot_svg(pen=pen,path="./input.svg",temp_gcode_file_path=./output.gcode)
+plot_svg(pen=pen,path="./input.svg",temp_gcode_file_path="./output.gcode")
 ```
 ![IMG-20251022-WA0009_resized](https://github.com/user-attachments/assets/8cfdf1b6-87d7-4dc0-bd43-108ac98ee50a)
 
