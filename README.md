@@ -7,7 +7,7 @@ only packages used are: </br>
 - vpype[all] and vpype-gcode (to convert svg to gcodes) </br>
 </br>
 
-To make installation easier I made a requirments.txt with frozen version numbers (python version I used is 3.13.9), </br>
+To make installation easier I made a requirments.txt with frozen version numbers (python version I used is 3.13.9, but I'm quite sure other version will also work), </br>
 to install the requirements you can just do </br>
 
 ```
