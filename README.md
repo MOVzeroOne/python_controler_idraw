@@ -4,14 +4,14 @@
 <h3> Drawing a square with incremental increase in speed for each side </h3> </br>
 
 ```
-pen = AutoPen() </br>
+pen = AutoPen()
 
-pen.set_pen_height(5) # pen down</br>
-pen.move_xy_variable_speed(x=0,y=10,speed=500) </br>
-pen.move_xy_variable_speed(x=10,y=10,speed=1000) </br>
-pen.move_xy_variable_speed(x=10,y=0,speed=1500) </br>
-pen.move_xy_variable_speed(x=0,y=0,speed=2000) </br>
-pen.set_pen_height(0) # pen up </br>
+pen.set_pen_height(5) # pen down
+pen.move_xy_variable_speed(x=0,y=10,speed=500) 
+pen.move_xy_variable_speed(x=10,y=10,speed=1000) 
+pen.move_xy_variable_speed(x=10,y=0,speed=1500) 
+pen.move_xy_variable_speed(x=0,y=0,speed=2000) 
+pen.set_pen_height(0) # pen up 
 ```
 
 <h3> Drawing a circle </h3> </br>
@@ -21,9 +21,13 @@ pen.set_pen_height(0) # pen up </br>
 
 
 <h3>Draw SVG </h3>
-pen = AutoPen() </br>
 
-plot_svg(pen=pen,path="./input.svg",temp_gcode_file_path=./output.gcode)  </br>
+```
+pen = AutoPen()
+
+plot_svg(pen=pen,path="./input.svg",temp_gcode_file_path=./output.gcode)
+
+```
 ![IMG-20251022-WA0009_resized](https://github.com/user-attachments/assets/8cfdf1b6-87d7-4dc0-bd43-108ac98ee50a)
 
 <h3>Draw multilayer drawing (merge multiple seperate svg's, with time between pen swapping)</h3>
