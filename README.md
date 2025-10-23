@@ -32,9 +32,9 @@ plot_svg(pen=pen,path="./input.svg",temp_gcode_file_path=./output.gcode)
 <h3>Draw multilayer drawing (merge multiple seperate svg's, with time between pen swapping)</h3>
 
 ```
-pen = AutoPen() </br>
+pen = AutoPen()
 
-multilayer_svg(pen,["multilayer_image/green_layer_resized.svg","multilayer_image/red_layer_resized.svg","multilayer_image/blue_layer_resized.svg"]) </br>
+multilayer_svg(pen,["multilayer_image/green_layer_resized.svg","multilayer_image/red_layer_resized.svg","multilayer_image/blue_layer_resized.svg"]) 
 ```
 (add first layer) </br>
 ![IMG_20251023_135543149](https://github.com/user-attachments/assets/ee499ced-fc97-4c61-9c78-3822518c2c71)
