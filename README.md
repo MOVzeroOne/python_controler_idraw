@@ -24,8 +24,6 @@ pen.set_pen_height(0) # pen up
 <h3> Drawing a circle </h3> </br>
 
 
-<h3>Drawing a bunch of circles </h3>
-
 
 <h3>Draw SVG </h3>
 
