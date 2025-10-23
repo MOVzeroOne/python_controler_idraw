@@ -34,6 +34,29 @@ pen.set_pen_height(0) # pen up
 
 <h3> Drawing a chain </h3> 
 
+```
+pen = AutoPen()
+
+pen.set_pen_height(5) # pen down
+pen.arc_clock_wise(4,8,2,4) #new pos is (4,8)
+pen.arc_clock_wise(8,16,2,4) #new pos is (8,16)
+pen.arc_clock_wise(12,24,2,4) #new pos is (12,24)
+pen.arc_clock_wise(8,16,-2,-4) #new pos is (8,16)
+pen.arc_clock_wise(4,8,-2,-4) #new pos is (4,8)
+pen.arc_clock_wise(0,0,-2,-4) #new pos is (0,0)
+pen.set_pen_height(0) # pen up 
+
+pen.move_xy_variable_speed(2,0) #move to (2,0)
+pen.set_pen_height(5) # pen down
+pen.arc_counter_clock_wise(6,8,2,4) #new pos is (6,8)
+pen.arc_counter_clock_wise(10,16,2,4) #new pos is (10,16)
+pen.arc_counter_clock_wise(14,24,2,4) #new pos is (14,24)
+pen.arc_counter_clock_wise(10,16,-2,-4) #new pos is (8,16)
+pen.arc_counter_clock_wise(6,8,-2,-4) #new pos is (4,8)
+pen.arc_counter_clock_wise(2,0,-2,-4) #new pos is (0,0)
+pen.set_pen_height(0) # pen up
+pen.move_xy_variable_speed(0,0) #move to start
+```
 
 <h3>Draw SVG </h3>
 
