@@ -1,5 +1,12 @@
 <h1> iDraw H A3 pen plotter python api (linux) </h1>
 
+<h2> Things to know </h2>
+
+When plotting an svg, you should put the pen in the bottom left. 
+When directly controling the autopen with move_xy and arcs know that the position the pen starts in will be seen as the 0,0 point, and by default all movements 
+are absolute coordinates with respect to this point. 
+
+
 <h2>Examples </h2>
 <h3> Drawing a square with incremental increase in speed for each side </h3> </br>
 
