@@ -21,7 +21,7 @@ pen.move_xy_variable_speed(x=0,y=0,speed=2000)
 pen.set_pen_height(0) # pen up 
 ```
 
-<h3> Drawing a circle </h3> </br>
+<h3> Drawing a circle </h3> 
 
 ```
 pen = AutoPen()
@@ -31,6 +31,9 @@ pen.arc_clock_wise(0,0,2,2)
 pen.set_pen_height(0) # pen up 
 
 ```
+
+<h3> Drawing a chain </h3> 
+
 
 <h3>Draw SVG </h3>
 
