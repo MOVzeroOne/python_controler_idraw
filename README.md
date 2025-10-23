@@ -18,9 +18,12 @@ pip install -r requirements.txt
 
 <h2> Things to know </h2>
 
-When plotting an svg, you should put the pen in the bottom left. </br>
+When plotting an svg, you should put the pen in the bottom left. </br> </br>
 When directly controling the autopen with move_xy and arcs know that the position the pen starts in will be seen as the 0,0 point, and by default all movements 
-are absolute coordinates with respect to this point. </br>
+are absolute coordinates with respect to this point. </br> </br>
+Using arcs is a bit odd, you basically have to define a center of the arc relative to the position of the pen, </br>
+and then give the position you want to end the arc in absolute coordinates. If the ending coordinates don't end up on the circle who's center you have defined (with I,J) </br>
+the instruction will not be valid.
 
 
 <h2>Examples </h2>
