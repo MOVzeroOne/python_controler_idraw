@@ -21,6 +21,11 @@ pen.move_xy_variable_speed(x=0,y=0,speed=2000)
 pen.set_pen_height(0) # pen up 
 ```
 
+
+https://github.com/user-attachments/assets/396987d8-6b0b-4993-b329-576341d77da2
+
+
+
 <h3> Drawing a circle </h3> 
 
 ```
