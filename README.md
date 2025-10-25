@@ -1,4 +1,4 @@
-<h1> iDraw H A3 pen plotter python api (linux) </h1>
+<h1> iDraw H A3 pen plotter python api (linux and raspberry pi) </h1>
 
 <h2> Installation</h2>
 only packages used are: </br> 
