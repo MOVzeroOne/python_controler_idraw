@@ -1,6 +1,7 @@
 <h1> iDraw H A3 pen plotter python api (linux and raspberry pi) </h1>
 
 <p> I have a penplotter iDraw H A3 from UUNA TEK (https://uunatek.com/ or https://idrawpenplotter.com/) </p>
+<p> This model (https://uunatek.com/products/uuna-tek-h-version-pen-plotter-a3-size-handwriting-machine-xy-plotter-laser-engraver) </p>
 
 <h2> Installation</h2>
 only packages used are: </br> 
